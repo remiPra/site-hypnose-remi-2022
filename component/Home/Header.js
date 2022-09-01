@@ -12,7 +12,7 @@ function Header() {
                 </div>
                 <h1 className="mb-[60px] text-[24px] w-[100%] text-center ">Hypnotherapeute - Praticien en Hypnose à Toulouse</h1>
                 <nav className={`w-[100%] mb-[80px] justify-center 
-                sm:hidden md:hidden lg:flex`}>
+                hidden md:flex`}>
                     <ul className={`w-[100%] flex flex-row justify-center`}>
                         <Link passHref href='/'>
                             <li className={` btnF fron-left font-medium text-[20px] min-w-[180px] max-w-[400px] text-center`}>
