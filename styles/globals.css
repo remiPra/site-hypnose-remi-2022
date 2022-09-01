@@ -45,3 +45,22 @@ a {
 .image1 {
   background-image: url('/assets/hiker-looks-out-over-bay-surrounded-by-mountains (1).jpg');
 }
+
+
+/* button */
+.buttonPrimary {
+  background-color: white;
+
+  border-width: 0px 0px 0px 0px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 21px 27px 21px 27px;
+}
+
+.buttonPrimary:hover, .buttonMenu:hover {
+color:var(--color-third);
+background-color: var(--color-primary);
+}
+
+.colorPrimary {
+  color: var(--color-primary);
+}

@@ -10,7 +10,7 @@ function Header() {
                 <div className=" mt-[80px] w-[100%] flex justify-center">
                     <img width="500px" src='assets/logoRémiPradereSopromagnetiseur.png' />
                 </div>
-                <h1 className="mb-[60px] text-[24px] w-[100%] text-center ">Hypnotherapeute - Praticien en Hypnose à Toulouse</h1>
+                <h1 className="colorPrimary mb-[60px] text-[24px] w-[100%] text-center ">Hypnotherapeute - Praticien en Hypnose à Toulouse</h1>
                 <nav className={`w-[100%] mb-[80px] justify-center 
                 hidden md:flex`}>
                     <ul className={`w-[100%] flex flex-row justify-center`}>
