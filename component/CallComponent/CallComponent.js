@@ -6,6 +6,9 @@ import { RiMessengerLine } from 'react-icons/ri'
 import { AiOutlineMail } from 'react-icons/ai'
 import Link from 'next/link';
 import colorPrimaryConstant from '../../constants/Constants'
+import { PropaneSharp } from '@mui/icons-material'
+import { useDispatch, useSelector } from 'react-redux'
+import { menuFalse, menuTrue, selectMenuBool } from '../../featured/basketSlice'
 
 function CallComponent() {
 
@@ -17,7 +20,7 @@ function CallComponent() {
 
   const [contactContainer, setContactContainer] = useState('contactContainer');
 
-
+    const dispatch = useDispatch()
 
   const [boolContact, setBoolContact] = useState(false)
   const [colorButton, setColorButton] = useState(`text-[${colorPrimaryConstant}] buttonPrimary`)
@@ -32,7 +35,7 @@ function CallComponent() {
       const iconTableau = ['FaPhone', 'BsWhatsapp', 'RiMessengerLine', 'AiOutlineMail']
       i++
       console.log(i)
-      console.log(iconTableau)
+      console.log(menuBool)
       
       if(i > iconTableau.length -1 ){
         setIcon(iconTableau[0])
@@ -42,11 +45,11 @@ function CallComponent() {
       }
     }, 5000)
   }
-
+  const menuBool = useSelector(selectMenuBool)
   return (<>
-    {(boolContact == false) && (
+    {(boolContact == false ) && (
       <div style={{ position: "fixed", bottom: "20px", right: '5%', zIndex: 222 }}>
-
+        
         <button onClick={() => { setContactContainer('contactContainer'); setBoolContact(true) }} 
         className={`text-[${colorPrimaryConstant}] buttonPrimary`}>
           {(icon == 'FaPhone') && <FaPhone />}
@@ -57,7 +60,7 @@ function CallComponent() {
         </button>
       </div>
     )}
-    {(boolContact) && (
+    {(boolContact || menuBool) && (
       <div className={contactContainer} style={{ zIndex: 2222222222222, backgroundColor: '#497e6a', position: "fixed", bottom: '0px', left: '0px', width: '100%', height: '100%' }}>
         <div style={{ zIndex: -1, position: 'absolute', top: '0px', width: "100%", overflowX: "hidden" }}>
 
@@ -68,7 +71,8 @@ function CallComponent() {
         </div>
         <button onClick={() => {
           setContactContainer('contactContainerOut')
-          setTimeout(() => { setBoolContact(false) }, 800)
+          setTimeout(() => { setBoolContact(false);dispatch(menuFalse()) }, 200)
+          
         }} className={colorButton}
           style={{ display: 'flex', float: "right", marginRight: "20px", marginTop: "20px", width: "80px", height: "80px", justifyContent: 'center', alignItems: 'center' }}>
           <GrClose fontSize={40} />

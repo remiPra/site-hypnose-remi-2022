@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --color-primary:rgb(89, 121, 142);
-  --color-third:#decb8c
+  /* --color-primary:rgb(89, 121, 142); */
+  --color-primary:#1b271b;
+  --color-secondary:#84783A;
+  --color-third:#decb8c;
 }
 
 
@@ -42,8 +44,17 @@ a {
   justify-content: center;
 }
 
+.image3 {
+  background-image: url('/assets/woman-walks-bridge.jpg');
+}
+.image4 {
+  background-image: url('/assets/imageSecond.jpg');
+}
+.image2 {
+  background-image: url('/assets/landscape-shot-of-green-mountains-below-foggy-sky.jpg');
+}
 .image1 {
-  background-image: url('/assets/hiker-looks-out-over-bay-surrounded-by-mountains (1).jpg');
+  background-image: url('https://i.ibb.co/frpB61c/trees-3822149-1920.jpg');
 }
 
 
@@ -64,3 +75,249 @@ background-color: var(--color-primary);
 .colorPrimary {
   color: var(--color-primary);
 }
+
+
+/* ~~~~~~~ INIT. btnFF ~~~~~~~ */
+
+.btnF {
+  position: relative;
+  color: var(--color-primary);
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.btnF:before,
+.btnF:after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btnF:hover {
+  color:whitesmoke ;
+  transition-delay: .5s;
+}
+
+.btnF:hover:before {
+  transition-delay: 0s;
+}
+
+.btnF:hover:after {
+  background: var(--color-primary);
+  transition-delay: .35s;
+}
+
+
+/* From Top */
+
+.from-top:before,
+.from-top:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+
+.from-top:before {
+  bottom: 0;
+  border: 1px solid var(--inv);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.from-top:after {
+  top: 0;
+  height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+  height: 100%;
+}
+
+
+/* From Left */
+
+.from-left:before,
+.from-left:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.from-left:before {
+  right: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-left:after {
+  left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+  width: 100%;
+}
+
+
+/* From Right */
+
+.from-right:before,
+.from-right:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.from-right:before {
+  left: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-right:after {
+  right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+  width: 100%;
+}
+
+
+/* From center */
+
+.from-center:before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 0;
+  border: 1px solid var(--inv);
+  border-left: 0;
+  border-right: 0;
+}
+
+.from-center:after {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--inv);
+}
+
+.from-center:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.from-center:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+
+/* From Bottom */
+
+.from-bottom:before,
+.from-bottom:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+
+.from-bottom:before {
+  top: 0;
+  border: 1px solid var(--inv);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.from-bottom:after {
+  bottom: 0;
+  height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+  height: 100%;
+}
+.buttonPrimary {
+  background-color: white;
+
+  border-width: 0px 0px 0px 0px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 21px 27px 21px 27px;
+}
+
+.buttonPrimary:hover, .buttonMenu:hover {
+color:var(--color-third);
+background-color: var(--color-primary);
+}
+
+
+/* //////////////////////end btnF///////////////////////////////// */
+
+/* section 2 */
+
+.section1 {
+ margin-bottom: 150px;
+  padding: 70px 100px;
+}
+
+.section1header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.section1 h2 {
+  /* font-size: 30px; */
+  width: 60%;
+  margin: 0px auto;
+  z-index: 32;
+  background-color: white;
+  padding: 0px 30px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color:var(--color-primary);
+  text-align: center;
+  height: 100px;
+}
+
+.traitBleu {
+  background-color: aliceblue;
+  content: "";
+  border: 1px solid var(--color-primary);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 59px;
+  left: 0px;
+  z-index: -2;
+}
+
+figcaption {
+  /* margin:20px; */
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgb(89, 121, 142);
+  color: rgb(89, 121, 142);
+  ;
+  opacity: 0.4;
+}
+
+.mapouter{position:relative;text-align:right;height:300px;width:300px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}

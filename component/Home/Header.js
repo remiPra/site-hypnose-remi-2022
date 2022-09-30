@@ -15,21 +15,21 @@ function Header() {
                 hidden md:flex`}>
                     <ul className={`w-[100%] flex flex-row justify-center`}>
                         <Link passHref href='/'>
-                            <li className={` btnF fron-left font-medium text-[20px] min-w-[180px] max-w-[400px] text-center`}>
+                            <li className={`btnF fron-left font-medium text-[20px] min-w-[180px] w-[200px] text-center`}>
                                 ACCUEIL
 
                             </li>
                         </Link>
                         <Link passHref href='/'>
-                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px] max-w-[400px] text-center`}>
+                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px] w-[200px] text-center`}>
                                 BUT DE L HYPNOSE</li>
                         </Link>
                         <Link passHref href='/'>
-                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px] max-w-[400px] text-center`}>
+                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px]  w-[200px] max-w-[400px] text-center`}>
                                 QUI SUIS JE </li>
                         </Link>
                         <Link passHref href='/contact'>
-                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px] max-w-[400px] text-center`}>
+                            <li className={`btnF from-left font-medium text-[20px] min-w-[180px]  w-[200px] max-w-[400px] text-center`}>
                                 TARIFS ET CONTACT</li>
                         </Link>
                     </ul>
