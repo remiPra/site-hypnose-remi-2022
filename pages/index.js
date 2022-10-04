@@ -19,6 +19,11 @@ export default function Home() {
   
   
   return (<>
+  <Head>
+    <title>cabinet hypnose Toulouse  </title>
+    <meta name="description" content="cabinet d'hypnose Toulouse Cugnaux Tourneufeuille hypnothérapeute "/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  </Head>
     <Header />
     <Parralax1 img={img1} />
     <section className="section1">
