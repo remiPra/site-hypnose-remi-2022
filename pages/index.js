@@ -20,7 +20,7 @@ export default function Home() {
   
   return (<>
   <Head>
-    <title>cabinet hypnose Toulouse  </title>
+    <title>cabinet hypnose Toulouse Cugnaux Tournefeuille </title>
     <meta name="description" content="cabinet d'hypnose Toulouse Cugnaux Tourneufeuille hypnothérapeute "/>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   </Head>
