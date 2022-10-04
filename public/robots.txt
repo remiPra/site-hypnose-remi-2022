@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cabinet-hypnose-toulouse.netlify.app/
+
+# Sitemaps
+Sitemap: https://cabinet-hypnose-toulouse.netlify.app/sitemap.xml
