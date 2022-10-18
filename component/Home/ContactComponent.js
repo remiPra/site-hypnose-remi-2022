@@ -2,14 +2,14 @@ import Link from 'next/link'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { menuTrue } from '../../featured/basketSlice'
-import ComponentH2TraitBleu from '../../component/ComponentH2TraitBleu' 
+import ComponenthDeuxTraitBleu from '../../component/ComponenthDeuxTraitBleu' 
 
 function ContactComponentCard() {
     const dispatch = useDispatch()
     return (
         <section className="section1 mb-[70px]" >
            
-            <ComponentH2TraitBleu />
+            <ComponenthDeuxTraitBleu />
 
             <div className='flex flex-wrap justify-center'>
                 {[

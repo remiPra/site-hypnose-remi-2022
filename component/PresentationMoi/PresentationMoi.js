@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import ComponentH2TraitBleu from '../componentH2TraitBleu'
+import ComponenthDeuxTraitBleu from '../ComponenthDeuxTraitBleu.js'
 
 function PresentationMoi() {
     const primary = "#6b89c9"
     const secondary = "#decb8c"
     return (<div className='section1'>
-        <ComponentH2TraitBleu/>
+        <ComponenthDeuxTraitBleu/>
         <div className='block  lg:flex mt-[50px] w-[100%]'>
             <div data-aos="fade-left" className='lg:w-2/6 lg:m-0'>
                     <img className='rounded-[50%] my-0 mx-auto   lg:rounded-md w-[300px]  lg:m-0 lg:w-[100%]' src="/assets/Profil.jpg" />     

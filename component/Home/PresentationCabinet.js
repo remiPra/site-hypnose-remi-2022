@@ -1,10 +1,10 @@
 import React from 'react'
-import ComponentH2TraitBleu from '../componentH2TraitBleu'
+import ComponenthDeuxTraitBleu from '../ComponenthDeuxTraitBleu.js'
 
 function PresentationCabinet() {
     return (
         <div className='section1'>
-            <ComponentH2TraitBleu />
+            <ComponenthDeuxTraitBleu />
             <div className='shadow-xl block md:flex mt-[50px]'>
                 <div data-aos="fade-right" className='hidden lg:block lg:w-4/6'>
                     <img className='' src="/assets/buddhaPresntation.jpg" />
