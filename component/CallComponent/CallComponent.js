@@ -47,21 +47,21 @@ function CallComponent() {
   }
   const menuBool = useSelector(selectMenuBool)
   return (<>
-    {(boolContact == false ) && (
-      <div style={{ position: "fixed", bottom: "20px", right: '5%', zIndex: 222 }}>
+    {(boolContact == false || menuBool==false) && (
+      <div data-aos-delay="1000" data-aos="zoom-in" style={{ position: "fixed", bottom: "20px", right: '5%', zIndex: 222 }}>
         
         <button onClick={() => { setContactContainer('contactContainer'); setBoolContact(true) }} 
-        className={`text-[${colorPrimaryConstant}] buttonPrimary`}>
-          {(icon == 'FaPhone') && <FaPhone />}
-          {(icon == 'BsWhatsapp') && <BsWhatsapp />}
-          {(icon == 'RiMessengerLine') && <RiMessengerLine />}
-          {(icon == 'AiOutlineMail') && < AiOutlineMail />}
+        className={`border-[#decb8c] text-[#6b89c9]  border-2 text-[${colorPrimaryConstant}] buttonPrimary`}>
+          {(icon == 'FaPhone') && <FaPhone  />}
+          {(icon == 'BsWhatsapp') && <BsWhatsapp  />}
+          {(icon == 'RiMessengerLine') && <RiMessengerLine   />}
+          {(icon == 'AiOutlineMail') && < AiOutlineMail  />}
 
         </button>
       </div>
     )}
     {(boolContact || menuBool) && (
-      <div className={contactContainer} style={{ zIndex: 2222222222222, backgroundColor: '#497e6a', position: "fixed", bottom: '0px', left: '0px', width: '100%', height: '100%' }}>
+      <div className={contactContainer} style={{ zIndex: 2222222222222, backgroundColor: '#6b89c9', position: "fixed", bottom: '0px', left: '0px', width: '100%', height: '100%' }}>
         <div style={{ zIndex: -1, position: 'absolute', top: '0px', width: "100%", overflowX: "hidden" }}>
 
           <div style={{

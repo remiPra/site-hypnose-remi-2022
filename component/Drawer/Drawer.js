@@ -16,6 +16,10 @@ import Link from 'next/link';
 import { Cottage } from '@mui/icons-material';
 
 
+
+
+const colorPrimaryConstant = "#6b89c9";
+
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -51,7 +55,7 @@ export default function TemporaryDrawer() {
             <ul>
              
                   <Link passHref={true} href={"./"}>
-                    <li> <Cottage/>
+                    <li data-aos="fade-up"> <Cottage/>
  
                       Accueil</li>
                   </Link>
@@ -68,18 +72,7 @@ export default function TemporaryDrawer() {
 
         </List>
         <Divider />
-        <List>
-          {/* {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
-        </List>
+      
       </Box>
     </>
   );
@@ -90,7 +83,7 @@ export default function TemporaryDrawer() {
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
 
-            <AiOutlineMenu className='cursor-pointer' color='#1b271b' size={30} />
+            <AiOutlineMenu className='cursor-pointer' color={colorPrimaryConstant} size={30} />
           </Button>
           <Drawer
             anchor={anchor}

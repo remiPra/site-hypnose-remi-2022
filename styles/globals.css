@@ -1,10 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "aos/dist/aos.css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* bitter-regular - latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/bitter-v28-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/bitter-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/bitter-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/bitter-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/bitter-v28-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/bitter-v28-latin-regular.svg#Bitter') format('svg'); /* Legacy iOS */
+}
 
 :root {
   /* --color-primary:rgb(89, 121, 142); */
-  --color-primary:#1b271b;
+  --color-primary:#6b89c9;
   --color-secondary:#84783A;
   --color-third:#decb8c;
 }
@@ -16,8 +31,13 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family:Playfair Display,  BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1,h2,h3,a,h4,p,li {
+  font-family: 'Bitter', serif;
+  /* color:#6b89c9 */
 }
 
 a {
@@ -55,7 +75,8 @@ a {
   background-image: url('/assets/landscape-shot-of-green-mountains-below-foggy-sky.jpg');
 }
 .image1 {
-  background-image: url('https://i.ibb.co/frpB61c/trees-3822149-1920.jpg');
+  /* background-image: url('https://i.ibb.co/frpB61c/trees-3822149-1920.jpg'); */
+  background-image: url('/assets/snow-covered-mountains-and-forest.jpg');
 }
 
 
@@ -320,5 +341,31 @@ figcaption {
   opacity: 0.4;
 }
 
-.mapouter{position:relative;text-align:right;height:300px;width:300px;}
-.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:300px;}
+.mapouter{position:relative;text-align:right;height:200px;width:200px;}
+.gmap_canvas {margin-bottom: 100px; position:relative;overflow:hidden;background:none!important;height:200px;width:200px;}
+
+
+.sentence {
+  width: 100%;
+  height: 100%;
+  content: " ";
+  background-color: white;
+    animation: appearenceEffect 7s infinite ease-in-out;
+    z-index:1;
+    position: absolute;
+}
+
+@keyframes appearenceEffect {
+    0% {
+      opacity: 1;
+    } 
+    50% {
+      opacity:0
+    }
+    70% {
+      opacity:0
+    }
+    100% {
+      opacity:1
+    }
+}
