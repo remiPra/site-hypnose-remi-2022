@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux'
 import { selectBasketCardSecret4, selectMenuBool } from '../featured/basketSlice'
 import PresentationMoi from '../component/PresentationMoi/PresentationMoi'
 import PresentationCabinet from '../component/Home/PresentationCabinet'
+import ComponentDeuxTraitBleu from '../component/ComponenthDeuxTraitBleu'
 
 export default function Home() {
 
@@ -18,22 +19,18 @@ export default function Home() {
   const img3 = 'image3';
   const menuBool = useSelector(selectMenuBool)
   const store = useSelector(selectBasketCardSecret4)
-  
-  
+
+
   return (<>
-  <Head>
-    <title>cabinet hypnose Toulouse Cugnaux Tournefeuille </title>
-    <meta name="description" content="cabinet d'hypnose Toulouse Cugnaux Tourneufeuille hypnothérapeute "/>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  </Head>
+    <Head>
+      <title>cabinet hypnose Toulouse Cugnaux Tournefeuille </title>
+      <meta name="description" content="cabinet d'hypnose Toulouse Cugnaux Tourneufeuille hypnothérapeute " />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <Header index="main" />
     <Parralax1 img={img1} />
-    <section className="section1">
-      <div className="section1header" style={{ position: 'relative' }}>
-        <div className="traitBleu"></div>
-     
-        <h2 className='text-[20px] lg:text-[30px] w-[80%] md:w-[60%] '>Venez à bout de vos troubles grâce à l’hypnose</h2>
-      </div>
+    <section className="section1 p-5 lg:px-[100px] lg:py-[70px]">
+      <ComponentDeuxTraitBleu />
       <div className="mt-[30px] flex flex-wrap justify-center">
         {[
           {
@@ -41,41 +38,41 @@ export default function Home() {
             tarif: 'Tarif : 50 euros',
             description: "Essayer a travers un script hynotique les effets que peuvent vous faire l'hypnose",
 
-        },
+          },
           {
             title: "Perte de Poids",
             tarif: 'Tarif : 50 euros',
             description: "Essayer a travers un script hynotique les effets que peuvent vous faire l'hypnose",
 
-        },
-        {
+          },
+          {
             title: "Confiance en soi",
             tarif: 'Tarif : 50 euros',
             description: "la séance peut durer d 1h a 1h30 uniquement sur rendez vous",
 
-        },
-        {
+          },
+          {
             title: "Arret du Tabac",
             tarif: 'Tarif : 50 euros',
             description: "la séance peut durer d 1h a 1h30 uniquement sur rendez vous",
 
-        },
-        {
+          },
+          {
             title: "Troubles de Sommeil",
             tarif: 'Tarif : 50 euros',
             description: "la séance peut durer d 1h a 1h30 uniquement sur rendez vous",
 
-        },
-        {
+          },
+          {
             title: "Troubles Sexuels",
             tarif: 'Tarif : 50 euros',
             description: "la séance peut durer d 1h a 1h30 uniquement sur rendez vous",
 
-        }
-        ].map((el,index) => (
+          }
+        ].map((el, index) => (
           <div key={index} className="m-6 p-6  min-w-[250px] w-[300px] bg-white rounded-lg border-[2px] border-[white] shadow-[#6b89c9] shadow-2xl  dark:bg-gray-800 dark:border-gray-700">
             <h3 className="text-[#decb8c] text-[25px]  text-center h-[50px] text-2xl font-bold tracking-tight dark:text-white">{el.title}</h3>
-            
+
             <p className="mb-3 font-normal text-[#6b89c9] dark:text-gray-400">la séance peut durer d 1h a 1h30 uniquement sur rendez vous </p>
             <Link passHref href='/'>
               <a className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-[#6b89c9] rounded-lg hover:bg-[#decb8c] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -88,15 +85,15 @@ export default function Home() {
         }
 
       </div>
-    
+
     </section>
     <Parralax1 img={img2} />
-    <PresentationMoi/>
+    <PresentationMoi />
     <Parralax1 img={img3} />
-    <PresentationCabinet/>
+    <PresentationCabinet />
     <Parralax1 img={img3} />
     <ContactComponentCard />
-    
+
   </>
 
   )

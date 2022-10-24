@@ -5,7 +5,7 @@ import ComponenthDeuxTraitBleu from '../ComponenthDeuxTraitBleu.js'
 function PresentationMoi() {
     const primary = "#6b89c9"
     const secondary = "#decb8c"
-    return (<div className='section1'>
+    return (<div className='section1 p-5 lg:px-[100px] lg:py-[70px]'>
         <ComponenthDeuxTraitBleu/>
         <div className='block  lg:flex mt-[50px] w-[100%]'>
             <div data-aos="fade-left" className='lg:w-2/6 lg:m-0'>

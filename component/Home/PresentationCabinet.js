@@ -3,7 +3,7 @@ import ComponenthDeuxTraitBleu from '../ComponenthDeuxTraitBleu.js'
 
 function PresentationCabinet() {
     return (
-        <div className='section1'>
+        <div className='section1 p-5 lg:px-[100px] lg:py-[70px]'>
             <ComponenthDeuxTraitBleu />
             <div className='shadow-xl block md:flex mt-[50px]'>
                 <div data-aos="fade-right" className='hidden lg:block lg:w-4/6'>

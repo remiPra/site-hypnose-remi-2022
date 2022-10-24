@@ -7,7 +7,7 @@ import ComponenthDeuxTraitBleu from '../../component/ComponenthDeuxTraitBleu'
 function ContactComponentCard() {
     const dispatch = useDispatch()
     return (
-        <section className="section1 mb-[70px]" >
+        <section className="section1 p-5 lg:px-[100px] lg:py-[70px] mb-[70px]" >
            
             <ComponenthDeuxTraitBleu />
 
