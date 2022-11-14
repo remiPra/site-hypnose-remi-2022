@@ -30,9 +30,9 @@ export default function Home() {
     <Header index="main" />
     <Parralax1 img={img1} />
     <section className="section1 p-5 lg:px-[100px] lg:py-[70px]">
-      <ComponentDeuxTraitBleu title="Venez à bout de vos troubles grâce à l’hypnose" />
-      <p>Voici plusieurs exemples d'applications que l'hypnose peut vous apportez </p>
-      <p>Choisissez l'une des différentes options qui se présentent à vous </p>
+      <ComponentDeuxTraitBleu title="Venez à bout de vos troubles grâce à l hypnose" />
+      {/* <p>Voici plusieurs exemples d applications que l hypnose peut vous apportez </p>
+      <p>Choisissez l une des différentes options qui se présentent à vous </p> */}
       <div className="mt-[30px] flex flex-wrap justify-center">
         {[
           {
