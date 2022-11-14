@@ -16,7 +16,9 @@ const NavBarMobileHypose = () => {
       <div className='flex items-center'>
         <nav className='hidden md:flex'>
           <ul className={`flex text-${colorPrimaryConstant}`}>
+          <Link passHref={true} href={"/"}>
             <li data-aos-delay="100" data-aos="zoom-in" className={`cursor-pointer text-[#6b89c9] hover:text-[#decb8c] py-0 px-[1em]`}>Accueil</li>
+          </Link> 
             <li data-aos-delay="200"  data-aos="zoom-in" className={`cursor-pointer hover:text-[#decb8c] text-[${colorPrimaryConstant}] py-0 px-[1em]`}>Découvrir l'hypnose </li>
             <li data-aos-delay="300" data-aos="zoom-in" className={`cursor-pointer hover:text-[#decb8c] text-[${colorPrimaryConstant}] py-0 px-[1em]`}>Qui suis-je</li>
             <li data-aos-delay="400" data-aos="zoom-in" className={`cursor-pointer hover:text-[#decb8c] text-[${colorPrimaryConstant}] py-0 px-[1em]`}>Contact</li>

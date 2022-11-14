@@ -9,7 +9,7 @@ function ContactComponentCard() {
     return (
         <section className="section1 p-5 lg:px-[100px] lg:py-[70px] mb-[70px]" >
            
-            <ComponenthDeuxTraitBleu />
+            <ComponenthDeuxTraitBleu title="Venez à bout de vos troubles grâce à l’hypnose" />
 
             <div className='flex flex-wrap justify-center'>
                 {[
@@ -27,7 +27,7 @@ function ContactComponentCard() {
 
                     }
                 ].map(((el, index) => (
-                    <div key={index} className="m-6 p-6 min-w-[250px] bg-white rounded-lg border w-[300px] border-gray-200 shadow-[#6b89c9] shadow-2xl dark:bg-gray-800 dark:border-gray-700">
+                    <div key={index} className="m-6 p-6 min-w-[250px] bg-white rounded-lg  w-[300px] border-gray-200 shadow-[#6b89c9] shadow-2xl dark:bg-gray-800 dark:border-gray-700">
                         <h3  className="text-[25px] text-[#decb8c] mb-2 text-2xl font-bold tracking-tight dark:text-white">{el.title}</h3>
                         <h4 className='text-[#6b89c9]'>{el.tarif}</h4>
                         <p className="mb-3 font-normal text-[#6b89c9] dark:text-gray-400">la séance peut durer d 1h a 1h30 uniquement sur rendez vous </p>

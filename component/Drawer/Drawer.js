@@ -4,6 +4,9 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
+import BookIcon from '@mui/icons-material/Book';
+import FaceIcon from '@mui/icons-material/Face';
+import CallIcon from '@mui/icons-material/Call';
 import CottageIcon from '@mui/icons-material/Cottage';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -13,7 +16,8 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { AiOutlineMenu } from 'react-icons/ai'
 import Link from 'next/link';
-import { Cottage } from '@mui/icons-material';
+import { Book, Cottage } from '@mui/icons-material';
+import Image from 'next/image';
 
 
 
@@ -38,12 +42,19 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <>
-      <div className='my-2 mx-auto flex flex-col justify-center'>
-        <img style={{ margin: "5px auto" }} className="w-[100px]   md:w-[30%]" src='assets/logoRémiPradereSopromagnetiseur.png' />
-        <h1 className='text-center'>Rémi PRADERE <br />
+      <div className='mt-4 mb-6 mx-auto flex flex-col justify-center'>
+    
+        <Image layout="fill" 
+        sizes='100px'
+        style={{ margin: "5px auto" }} 
+        // className="w-[200px]   md:w-[30%]" 
+        src='/assets/logoNewStyle.png' />
+    
+        <h1 className='text-center text-[#6b89c9]'>Rémi PRADERE <br />
           Hypnothérapeute
         </h1>
       </div>
+      <Divider />
       <Box
         sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
         role="presentation"
@@ -54,16 +65,28 @@ export default function TemporaryDrawer() {
           <nav>
             <ul>
              
-                  <Link passHref={true} href={"./"}>
-                    <li data-aos="fade-up"> <Cottage/>
- 
+                  <Link className='flex ' passHref={true} href={"/"}>
+                    <li className='font-medium cursor-pointer hover:text-[#decb8c] my-3 ml-3 flex items-center text-[#6b89c9]'  data-aos="fade-up"> 
+                     <Cottage className=' text-[#6b89c9] mr-3' />
                       Accueil</li>
                   </Link>
-                  <Link passHref={true} href={"./but"}>
-                    <li> 
-                  But de l'Hypnose
-                    </li>
+                  <Link className='flex ' passHref={true} href={"./but"}>
+                    <li className='cursor-pointer hover:text-[#decb8c] text-[#6b89c9] my-3 ml-3 flex items-center'  data-aos="fade-up"> 
+                     <BookIcon className='mr-3' />
+                     Qu'est ce que l'hypnose ?</li>  
                   </Link>
+                  <Link className='flex ' passHref={true} href={"./but"}>
+                    <li className='cursor-pointer hover:text-[#decb8c] text-[#6b89c9] my-3 ml-3 flex items-center'  data-aos="fade-up"> 
+                     <FaceIcon className='mr-3' />
+                     Qui suis je ?</li>
+                  </Link>
+                
+                  <Link className='flex ' passHref={true} href={"./but"}>
+                    <li className='cursor-pointer hover:text-[#decb8c] text-[#6b89c9] my-3 ml-3 flex items-center'  data-aos="fade-up"> 
+                     <CallIcon className='mr-3' />
+                     Contact</li>
+                  </Link>
+                
             
 
 

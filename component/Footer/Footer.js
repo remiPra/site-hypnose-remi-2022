@@ -5,10 +5,10 @@ function Footer() {
     return (
         <div className='block md:flex bg-[#6b89c9] text-white  py-[50px] px-[50px]'>
             <div className='block  lg:flex lg:w-1/2 lg:justify-center'>
-            <div className='lg:w-1/2  py-0 '>
-                <h2 className='py-3 text-center'>Rémi PRADERE Hypnothérapeute</h2>
-                <h3 className='py-3'>Hypnose éricksonienne à Toulouse</h3>
-                <p>Le cabinet est facilement accessible depuis Blagnac, Balma, Ramonville-Saint-Agne, Colomiers, Saint Orens, Toulouse, Tournefeuille, Aucamville, Quint-Fonsegrives, L'Union, Beauzelle, Saint-Jean, Cugnaux ou Launaguet.</p>
+            <div className='lg:w-1/2  py-0  '>
+                <h2 className='text-white  py-3 text-center'>Rémi PRADERE Hypnothérapeute</h2>
+                <h3 className='text-white  py-3'>Hypnose éricksonienne à Toulouse</h3>
+                <p className='text-white'>Le cabinet est facilement accessible depuis Blagnac, Balma, Ramonville-Saint-Agne, Colomiers, Saint Orens, Toulouse, Tournefeuille, Aucamville, Quint-Fonsegrives, L'Union, Beauzelle, Saint-Jean, Cugnaux ou Launaguet.</p>
             </div>
             <div className='lg:w-1/2 max-w-[200px]   py-0 px-[15px]'>
                 <h3 className='py-3 text-center'>Plan du Site</h3>
