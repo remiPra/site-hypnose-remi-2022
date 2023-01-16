@@ -44,9 +44,9 @@ export default function TemporaryDrawer() {
     <>
       <div className='mt-4 mb-6 mx-auto flex flex-col justify-center'>
     
-        <Image layout="fill" 
-        sizes='100px'
-        style={{ margin: "5px auto" }} 
+        <img layout="responsive" 
+        size='100px'
+        className='mt-40px mx-auto' 
         // className="w-[200px]   md:w-[30%]" 
         src='/assets/logoNewStyle.png' />
     

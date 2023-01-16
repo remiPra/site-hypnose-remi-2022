@@ -72,7 +72,7 @@ export default function Home() {
             lien:'/PerteDePoidsScript'
           }
         ].map((el, index) => (
-          <div key={index} className="m-6 p-6  min-w-[250px] w-[300px] bg-white rounded-lg border-[2px] border-[white] shadow-[#6b89c9] shadow-2xl  dark:bg-gray-800 dark:border-gray-700">
+          <div key={index} className="hover:duration-300 hover:translate-y-[-30px] hover:ease-linear m-6 p-6  min-w-[250px] w-[300px] bg-white rounded-lg border-[2px] border-[white] shadow-[#6b89c9] shadow-2xl  dark:bg-gray-800 dark:border-gray-700">
             <h3 className="text-[#decb8c] text-[25px]  text-center h-[50px] text-2xl font-bold tracking-tight dark:text-white">{el.title}</h3>
 
             <p className="mb-3 font-normal text-[#6b89c9] dark:text-gray-400">{el.description} </p>
